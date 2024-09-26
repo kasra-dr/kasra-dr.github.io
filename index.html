@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه شخصی کسری درمانی</title>
+    <style>
+        /* تنظیمات کلی صفحه */
+        body {
+            font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f9;
+            direction: rtl; /* راست‌چین کردن */
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* تنظیمات هدر */
+        header {
+            background: linear-gradient(135deg, rgba(48, 25, 52, 0.9), rgba(250, 235, 239, 0.9)); /* بنفش تیره مایل به مشکی و صورتی روشن مایل به سفید */
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            backdrop-filter: blur(10px); /* افکت بلور */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        /* توضیحات زیر عنوان اصلی */
+        header p.description {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #f0f0f0;
+            font-weight: 300;
+        }
+
+        /* استایل برای عکس */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* بخش اصلی محتوا */
+        section {
+            width: 90%;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #301934; /* بنفش تیره مایل به مشکی */
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* تنظیمات مربوط به مهارت‌ها */
+        .skills {
+            margin-top: 1.5rem;
+        }
+
+        .skill {
+            margin: 1rem 0;
+        }
+
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .progress {
+            background-color: rgba(126, 54, 114, 0.9); /* بنفش تیره */
+            height: 100%;
+            text-align: right;
+            padding-right: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            color: white;
+            font-size: 0.9rem;
+            line-height: 20px;
+        }
+
+        /* بخش تماس */
+        .contact {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: #d36099; /* صورتی روشن‌تر */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #301934; /* بنفش تیره */
+        }
+
+        /* تنظیمات فوتر */
+        footer {
+            text-align: center;
+            margin-top: 3rem; /* فاصله کافی از بخش اصلی */
+            padding: 1rem 0;
+            color: #666;
+        }
+
+        /* استایل برای موبایل */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.4rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="profile-pic" src="/home/kasra-dr/Pictures/profile.jpg" alt="کسری"> <!-- عکس از مسیر محلی -->
+        <h1>کسری - سیستم ادمین لینوکس</h1>
+        <p class="description">همواره به دنبال معنا و همیشه در جستجوی بیشینه و بهینه‌سازی</p> <!-- توضیحات مختصر زیر عنوان -->
+    </header>
+
+    <section>
+        <h2>مهارت‌ها</h2>
+        <div class="skills">
+            <div class="skill">
+                <p>مدیریت سیستم‌های لینوکسی</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;">60%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>پایتون</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;">50%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>MySQL</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;">50%</div>
+                </div>
+            </div>
+            <div class="skill"></div>
+                <p>Debian distro</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;">45%</div>
+                </div>
+            </div>
+            <div class="skill"></div>
+                <p>NginX</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 35%;">35%</div>
+                </div>
+            </div>
+            <div class="skill"></div>
+                <p>Git Version Control</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;">30%</div>
+                </div>
+            </div>
+            <div class="skill"></div>
+                <p>Docker</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;">30%</div>
+                </div>
+            </div>
+            <div class="skill"></div>
+                <p>😌 Have a happy life with ARCH Linux</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%; background-color: #315faf;">100%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>می‌توانید از طریق لینک‌های زیر با من در ارتباط باشید:</p>
+            <a href="https://linkedin.com/in/kasradrm" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/kasra-dr" target="_blank">GitHub</a> |
+            <a href="mailto:kasradrm21@gmail.com">Gmail</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>محتوای این صفحه صرفا جنبه معرفی دارد ©</p>
+    </footer>
+
+</body>
+</html>
